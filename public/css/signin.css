@@ -70,3 +70,12 @@ body {
 #NLimg {
   opacity: 100%;
 }
+
+img {
+  filter: grayscale(100%);
+}
+
+img:hover {
+  filter: grayscale(50%) drop-shadow(2px 4px 6px rgba(255, 205, 5, 0.7));
+  transition: all 0.5s ease-in-out;
+}

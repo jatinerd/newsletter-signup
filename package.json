@@ -10,7 +10,6 @@
   },
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "@mailchimp/mailchimp_marketing": "^3.0.80",
     "@mailchimp/mailchimp_transactional": "^1.0.59",
@@ -19,5 +18,16 @@
     "https": "^1.0.0",
     "nodemon": "^3.1.10",
     "request": "^2.88.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jatinerd/newsletter-signup.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/jatinerd/newsletter-signup/issues"
+  },
+  "homepage": "https://github.com/jatinerd/newsletter-signup#readme",
+  "description": ""
 }
