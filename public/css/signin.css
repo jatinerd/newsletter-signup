@@ -79,3 +79,19 @@ img:hover {
   filter: grayscale(50%) drop-shadow(2px 4px 6px rgba(255, 205, 5, 0.7));
   transition: all 0.5s ease-in-out;
 }
+
+#go-back {
+  background: radial-gradient(circle at center, #26a856, #188640);
+  margin-top: 30px;
+  border-radius: 10px;
+  max-width: 200px;
+  display: inline;
+}
+
+#try-again {
+  background: radial-gradient(circle at center, #ef4444, #a73030);
+  margin-top: 30px;
+  border-radius: 10px;
+  max-width: 200px;
+  display: inline;
+}

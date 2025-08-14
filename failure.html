@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>Newsletter</title>
+
+    <!-- 
+     https://getbootstrap.com/docs/4.1/examples/sign-in/
+     -->
+    <link href="public/css/bootstrap.css" rel="stylesheet" />
+
+    <link href="public/css/signin.css" rel="stylesheet" />
+  </head>
+
+  <body class="text-center">
+    <div class="container">
+      <img
+        id="NLimg"
+        class="mb-4"
+        src="public/images/Lovepik_com-450123915-A customizable hand drawn icon of newsletter.png"
+        alt="Newsletter"
+        width="200"
+        height="200"
+      />
+      <h1 class="h3 mb-3 font-weight-normal">Sign up failed</h1>
+      <p class="text-muted">Please enter your details to sign up</p>
+      <form action="/failure" method="post">
+        <button class="btn btn-lg btn-primary btn-block" id="try-again">
+          Try again
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -4,6 +4,7 @@ import { fileURLToPath } from "url"; //
 import path from "path"; //
 import dotenv from "dotenv";
 import mailchimp from "@mailchimp/mailchimp_marketing";
+import e from "express";
 
 dotenv.config();
 
@@ -57,11 +58,24 @@ app.post("/", (req, res) => {
       response.on("data", (data) => {
         const result = JSON.parse(data);
         console.log(result);
+        res.sendFile(path.join(__dirname, "success.html")); // Send success response
+      });
+    } else {
+      response.on("data", (data) => {
+        const result = JSON.parse(data);
+        console.log(result);
+        res.sendFile(path.join(__dirname, "failure.html")); // Send failure response
       });
     }
   });
-  request.write(jsonData);
-  request.end();
+  request.write(jsonData); // to Mailchimp API
+  request.end(); // close the request
 });
 
-// 19ab6c240bc999c2b8ec5b48184edff4-us12
+app.post("/failure", (req, res) => {
+  res.redirect("/"); // Redirect to the sign-up page on failure
+});
+
+app.post("/success", (req, res) => {
+  res.redirect("/"); // Redirect to the sign-up page on success
+});
